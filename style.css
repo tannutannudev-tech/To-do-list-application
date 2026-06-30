@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+h2{
+    color: white;
+    font-size: 38px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.input,
+.inputDate{
+    width: 280px;
+    padding: 12px;
+    margin: 10px 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.inputDate{
+    width: 170px;
+}
+
+button{
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+body > button{
+    background-color: #6C63FF;
+    color: white;
+    font-weight: bold;
+}
+
+body > button:hover{
+    background-color: #574bdb;
+    transform: scale(1.05);
+}
+
+.container{
+    width: 700px;
+    margin-top: 35px;
+}
+
+.container div{
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: 0.3s;
+}
+
+.container div:hover{
+    transform: translateY(-3px);
+}
+
+.container p:first-child{
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    word-break: break-word;
+}
+
+.container p:nth-child(2){
+    color: gray;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.container button{
+    background: #f5f5f5;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+.container button:hover{
+    background: #e9e9e9;
+    transform: scale(1.1);
+}
+
+.container button:last-child:hover{
+    background: #ffe8a3;
+}
+
+.container button:nth-last-child(2):hover{
+    background: #ffd6d6;
+}
+
+.container input{
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #6C63FF;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
