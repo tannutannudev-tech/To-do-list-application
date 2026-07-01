@@ -2,6 +2,11 @@ function ADD(){
     let input = document.querySelector(".input");
     let inputDate = document.querySelector(".inputDate");
     let container = document.querySelector(".container");
+    let checkbox = document.createElement("input");
+    checkbox.classList.add("checkbox");
+    checkbox.type = "checkbox";
+    
+
     let div = document.createElement("div");
     let para = document.createElement("p");
     let datePara = document.createElement("p");
@@ -15,6 +20,7 @@ function ADD(){
     datePara.innerHTML = inputDate.value;
     para.innerHTML = task;
     let editInput = document.createElement("input");
+
 
     //function for delbtn
     delbtn.onclick = () => {
@@ -33,10 +39,15 @@ function ADD(){
     }
 }
 
+   //checkbox onclick function
+   checkbox.onchange = () => {
+    para.classList.toggle("completed" , checkbox.checked);
+   }
     div.appendChild(para);
     div.appendChild(datePara);
     div.appendChild(delbtn);
     div.appendChild(editbtn);
+    div.appendChild(checkbox);
     container.appendChild(div);
     input.value = "";
     inputDate.value ="";
