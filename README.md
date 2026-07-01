@@ -10,6 +10,7 @@ A simple and interactive To-Do List application built using **HTML**, **CSS**, a
 * 💾 Save edited tasks
 * 🗑️ Delete tasks
 * 🎨 Clean and responsive user interface
+* ✅  added complete button
 
 ## 🛠️ Technologies Used
 
