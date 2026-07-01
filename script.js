@@ -20,7 +20,7 @@ function ADD(){
     datePara.innerHTML = inputDate.value;
     para.innerHTML = task;
     let editInput = document.createElement("input");
-
+    editInput.classList.add("editInput");
 
     //function for delbtn
     delbtn.onclick = () => {
